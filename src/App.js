@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import SimpleForm from './001-begin/SimpleForm';
-import './App.css';
+import FilterableProductTable from './002-thinking-in-react/FilterableProductTable';
 
-
-// turned this into functional component.
+// This app is just a functional component
 const App = () =>(
-  <div>
+  <div style={{
+    margin: "0 auto",
+    maxWidth: '1280px',
+    width: '75%'
+  }}>
     <SimpleForm />
+    <hr />
+    <FilterableProductTable />
   </div>
 );
 

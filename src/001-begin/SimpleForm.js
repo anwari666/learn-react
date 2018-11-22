@@ -33,6 +33,10 @@ class SimpleForm extends Component {
 
     return (
       <div>
+        <h2>Exercise 1: better intro to react</h2>
+        <p>(from <a href="https://hackernoon.com/react-js-a-better-introduction-to-the-most-powerful-ui-library-ever-created-ecd96e8f4621">hackernoon</a>)</p>
+        
+        
         <label> 
           First Name:
           <input 
