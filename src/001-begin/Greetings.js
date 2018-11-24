@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Greetings = ( { firstName, lastName } ) => (
-    <h1>
+    <h3>
       Hello, { firstName } { lastName }!
-    </h1>
+    </h3>
   );
 
 export default Greetings;
