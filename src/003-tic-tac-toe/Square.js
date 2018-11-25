@@ -1,20 +1,11 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 
-class Square extends React.Component {
-  constructor( props ){
-    super( props );
-  }
-
-  render() {
-    return (
+const Square = ( { onClick, value } ) => (
       <button 
-      className="square" 
-      onClick={ this.props.onClick } >
-        { this.props.value }
+        className="square" 
+        onClick={ onClick } >
+          { value }
       </button>
     );
-  }
-}
 
 export default Square;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Board from './Board';
 import './TicTacToe.css';
 
@@ -9,9 +8,11 @@ class TicTacToe extends Component{
 		this.state = {
 			currentPlayer: 'X',
 		}
+
+		this.handleChangePlayer = this.handleChangePlayer.bind(this);
 	}
 
-	handleChangePlayer = () => {
+	handleChangePlayer() {
 		const { currentPlayer } = this.state;
 
 		this.setState({
@@ -28,7 +29,6 @@ class TicTacToe extends Component{
           	onChangePlayer = { this.handleChangePlayer }/>
         </div>
         <div className="game-info">
-          <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>
         </div>
       </div>
