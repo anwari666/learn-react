@@ -63,7 +63,9 @@ class ProductTable extends Component {
             <div>
             	<h3>These are available goods</h3>
             	<table>
+                    <tbody>
 	                { rows }
+                    </tbody>
                 </table>
             </div>
         )

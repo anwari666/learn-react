@@ -3,7 +3,7 @@ import React from 'react';
 
 const ProductCategoryRow = ( { category } ) => (
     <tr>
-        <td colspan="2">
+        <td colSpan="2">
         	<strong>{ category }</strong></td>
     </tr>
 )
