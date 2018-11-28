@@ -1,67 +1,19 @@
 import React, { Component } from 'react';
 import Square from './Square';
+import Util from './Util';
 
 class Board extends Component {
-  constructor( props ){
-    super( props );
-
-    this.state = {
-    	squares : Array(9).fill(null)
-    }
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
 
   renderSquare(i) {
+    const squares = this.props.squares;
     return <Square 
-    	value = { this.state.squares[i] } 
-    	onClick = { () => this.handleClick(i) } />;
+    	value = { squares[i] } 
+    	onClick = { () => this.props.onClick(i) } />;
   }
 
-  calculateWinner(){
-  	const squares = this.state.squares;
-  	const winLines = [
-		[0,1,2],
-		[3,4,5],
-		[6,7,8],
-
-		[0,3,6],
-		[1,4,7],
-		[2,5,8],
-
-		[0,4,8],
-		[2,4,6]
-	]
-
-  	for (var i = winLines.length - 1; i >= 0; i--) {
-  		
-  		const [ a,b,c ] = winLines[i];
-
-  		if (squares[a] && squares[a] === squares[b] && squares[b] === squares[c])
-  			return squares[a];
-  	}
-
-  	return null;
-  }
-
-  handleClick(i) {
-
-
-  	const squares = this.state.squares.slice();
-  	if (this.calculateWinner() || squares[i])
-  		return;
-  	squares[i] = this.props.currentPlayer;
-
-  	this.setState({
-  		squares
-  	});
-
-  	this.props.onChangePlayer();
-  }
 
   render() {
-  	const winner = this.calculateWinner();
+  	const winner = Util.calculateWinner(this.props.squares);
     let status = 'Current player: ' + this.props.currentPlayer;
 
   	if (winner)
