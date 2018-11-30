@@ -4,11 +4,22 @@
 // allows state to be updated via dispatch(action)
 // register & deregister listener via subscribe( listener ) / unsubscribe();
 
-import { createStore } from 'redux';
-import todoApp from './reducers';
+import React from 'react'
+import render from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import todoApp from './reducers'
+import TodoApp from './TodoApp'
 
 const store = createStore( todoApp )
 
+render (
+  <Provider store={ store }>
+    <TodoApp />
+  </Provider>,
+
+  document.getElementById( 'root' )
+)
 
 /* REDUX's DATA FLOW:
 1. I call `store.dispatch(action)`

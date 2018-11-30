@@ -5,12 +5,12 @@ import PropTypes from 'prop-types'
 
 const TodoList = ( { todos, onTodoClick } ) => (
     <ul>
-        todos.map( (todo, index) => (
+        { todos.map( (todo, index) => (
             <Todo 
                 key={ index }
                 { ...todo } // spreading the `text` & `index`
                 onClick = { () => onTodoClick( index ) } />
-        ))
+        )) }
     </ul>)
 
 TodoList.propTypes = {
