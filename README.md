@@ -1,44 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a pet project to jumpstart my learning about React & Redux, written in ES6 using [Create React App](https://github.com/facebook/create-react-app). In future exercise, it will be replaced by Webpack and should cover asset bundling (js, css, html, other static assets), SASS/SCSS compilation, unit testing, and minification.
 
-## Available Scripts
+## Content
+The content is divided into exercises. Currently there are 5 exercises:
+1. SimpleForm. To show React's one-way data binding (as opposed to Angular's two-way data binding.)
+2. Filterable Product. Filters are enabled by its name and its category using React's state.
+3. Tic Tac Toe game, using only React. 
+4. Todo app, using Redux and React. This is allows a great intro to Redux's app structure. Also, it ties the root Redux's store into React.
+5. Stocky (work in progress). A retrospective stock investment simulator that takes investment value, date of investment and stock price as an input. It will automatically projects the value of the portfolio in current prices. Using the free IEX stock API, Chartjs, Redux, and React.
 
-In the project directory, you can run:
+## Running Project
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Just clone the repo and run `$ npm install && npm start`

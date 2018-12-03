@@ -14,8 +14,8 @@ const App = () =>(
   }}>
     <SimpleForm />
     <hr />
-    <hr />
     <FilterableProductTable />
+    <hr />
     <TicTacToe />
     <hr />
     <TodoApp />
