@@ -1,5 +1,5 @@
 import React from 'react'
-import SimpleForm from './001-begin/SimpleForm'
+import SimpleForm2 from './001-begin/reexercise/SimpleForm2'
 import FilterableProductTable from './002-thinking-in-react/FilterableProductTable'
 import TicTacToe from './003-tic-tac-toe/TicTacToe'
 import TodoApp from './004-redux-todolist/TodoApp'
@@ -12,7 +12,7 @@ const App = () =>(
     maxWidth: '1280px',
     width: '75%'
   }}>
-    <SimpleForm />
+    <SimpleForm2 />
     <hr />
     <FilterableProductTable />
     <hr />
